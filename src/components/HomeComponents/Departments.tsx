@@ -10,7 +10,7 @@ function Departments() {
       <section>
         <div className="max-w-[1200px] m-auto p-8">
           <h2 className="text-2xl font-bold">Browse departments</h2>
-          <div className="grid grid-cols-2 gap-4 py-8">
+          <div className="grid gap-4 py-8 grid-cols-1 sm:grid-cols-1 md:grid-cols-2">
             {groceryDepartmentData.map((item, index) => (
               <Link to={item.link}>
                 <Card

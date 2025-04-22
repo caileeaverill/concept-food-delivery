@@ -1,16 +1,17 @@
 import { faker } from "@faker-js/faker";
 import { FaBowlRice, FaCanadianMapleLeaf, FaFish, FaBurger, FaAppleWhole, FaStore, FaBacon, FaCheese } from "react-icons/fa6";
+import { IconType } from "react-icons";
 
 
-interface GroceryStore {
+export interface GroceryStore {
     id: string;
     name: string;
     description: string;
-    icon: React.ComponentType;
+    icon: IconType;
     orderBy: string;
     storeTimes: string;
     storeFeatures: string;
-    link?: string;
+    link?: string; // ✅ Add this line
 }
 
 const namePrefixes = [

@@ -3,7 +3,7 @@
 A sleek and minimal concept site for browsing grocery store departments and discovering featured food items. Built to explore UI design, data structuring, and responsive layout techniques.
 
 🔗 **Live Site:**  
-[https://concept-food-delivery-mb0i7h8jq-cailees-projects.vercel.app](https://concept-food-delivery-mb0i7h8jq-cailees-projects.vercel.app)
+[https://concept-food-delivery.vercel.app/](https://concept-food-delivery.vercel.app/)
 
 ---
 

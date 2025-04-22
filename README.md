@@ -1,4 +1,4 @@
-# 🥬 Concept Grocery Delivery
+# 🥬 Concept Food Delivery
 
 A sleek and minimal concept site for browsing grocery store departments and discovering featured food items. Built to explore UI design, data structuring, and responsive layout techniques.
 
@@ -42,7 +42,7 @@ A sleek and minimal concept site for browsing grocery store departments and disc
   → Shared, reusable UI components (e.g. buttons, headers, cards).
 
 - `src/components/PageComponents/` *(optional)*  
-  → Page-specific components organized by page (e.g. `Home/`) if you further modularize.
+  → Page-specific components organized by page (e.g. `HomeComponents/`, `AboutComponents/`).
 
 - `src/hooks/`  
   → Custom React hooks for abstracting logic (if needed).
@@ -50,8 +50,21 @@ A sleek and minimal concept site for browsing grocery store departments and disc
 - `src/lib/`  
   → Utility functions, API clients, or external libraries.
 
-- `App.tsx`, `main.tsx`  
-  → App entry point and root component.
+- `src/assets/`  
+  → Static assets like images, fonts, or icons.
+
+---
+
+## 📱 Mobile View
+
+The layout is fully responsive and optimized for mobile devices:
+
+- Grid adjusts to a **single column** on smaller screens for easy browsing.
+- Images and text scale gracefully to maintain visual clarity.
+- Tailwind’s responsive utilities (`grid-cols-1`, `sm:grid-cols-2`, `md:grid-cols-3`) ensure a smooth layout transition across devices.
+
+![Mobile View](https://github.com/caileeaverill/concept-food-delivery/blob/main/src/assets/mobile-view.png)
+
 ---
 
 ## 🛣️ Roadmap

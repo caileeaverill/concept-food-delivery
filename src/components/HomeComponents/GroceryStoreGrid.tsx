@@ -36,7 +36,7 @@ function GroceryStoreGrid() {
     <section>
       <div className="max-w-[1200px] m-auto p-8">
         <h2 className="text-2xl font-bold">Find stores nearby</h2>
-        <p className="text-neutral-500">
+        <p className="text-slate-600">
           Hover on a store to see store times and features
         </p>
         <>
@@ -45,13 +45,13 @@ function GroceryStoreGrid() {
               {groceryStoreList.map((store, index) => {
                 const Icon = store.icon;
                 return (
-                  <CarouselItem key={index} className="basis-1/5">
+                  <CarouselItem key={index} className="basis-1/2 sm:basis-1/5">
                     <HoverCard>
                       <HoverCardTrigger asChild>
                         <Link to={store.link}>
                           <Card className="relative w-full transition-all duration-300 hover:shadow-lg ">
                             {mostPopularIndexes.has(index) && (
-                              <Badge className="absolute -top-2 right-4 bg-lime-700">
+                              <Badge className="absolute -top-2 right-4 bg-green-700">
                                 Most Popular
                               </Badge>
                             )}
@@ -71,7 +71,7 @@ function GroceryStoreGrid() {
                         <p className="text-sm">
                           Open daily from {store.storeTimes}
                         </p>
-                        <p className="text-xs text-neutral-500">
+                        <p className="text-xs font-light text-slate-600">
                           {store.storeFeatures}
                         </p>
                       </HoverCardContent>
@@ -80,11 +80,15 @@ function GroceryStoreGrid() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <div className="hidden sm:block">
+              <CarouselPrevious />
+            </div>
+            <div className="hidden sm:block">
+              <CarouselNext />
+            </div>
           </Carousel>
         </>
-        <p className="text-xs text-neutral-500 text-right">
+        <p className="text-xs font-thin text-slate-600 text-right">
           Offers subject to terms and eligibility
         </p>
       </div>

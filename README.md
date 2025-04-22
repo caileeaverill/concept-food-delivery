@@ -63,7 +63,8 @@ The layout is fully responsive and optimized for mobile devices:
 - Images and text scale gracefully to maintain visual clarity.
 - Tailwind’s responsive utilities (`grid-cols-1`, `sm:grid-cols-2`, `md:grid-cols-3`) ensure a smooth layout transition across devices.
 
-![Mobile View](https://github.com/caileeaverill/concept-food-delivery/blob/main/src/assets/mobile-view.png)
+<img src="https://github.com/caileeaverill/concept-food-delivery/blob/main/src/assets/mobile-view.png" alt="Mobile View" width="400" />
+
 
 ---
 

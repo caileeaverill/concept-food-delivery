@@ -1,7 +1,14 @@
 import { faker } from "@faker-js/faker";
 
+interface Testimonial {
+    id: string;
+    name: string;
+    tagline: string;
+    text: string;
+    avatar: string;
+}
 
-const generateTestimonial = Array.from({ length: 3 }, () => ({
+const generateTestimonial: Testimonial[] = Array.from({ length: 3 }, (): Testimonial => ({
     id: faker.string.uuid(),
     name: faker.person.fullName(),
     tagline: faker.lorem.sentence({ min: 5, max: 10 }),
@@ -10,4 +17,3 @@ const generateTestimonial = Array.from({ length: 3 }, () => ({
 }));
 
 export default generateTestimonial;
-

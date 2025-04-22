@@ -22,8 +22,8 @@ function Footer() {
                 {footerSocialMediaLinksData.map((link, index) => {
                   const Icon = link.icon;
                   return (
-                    <Link key={index} to={link.link}>
-                      <Icon />
+                    <Link key={index} to={link.href ?? "#"}>
+                      <Icon className="transition-all duration-300 hover:scale-125" />
                     </Link>
                   );
                 })}
@@ -37,9 +37,9 @@ function Footer() {
                   {link.links.map((item, index) => {
                     return (
                       <Link
-                        className="hover:underline"
+                        className="transition-all duration-300 hover:opacity-60"
                         key={index}
-                        to={item.link}
+                        to={item.href ?? "#"}
                       >
                         {item.name}
                       </Link>

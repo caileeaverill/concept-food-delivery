@@ -5,7 +5,7 @@ import Search from "./Search";
 function Navbar() {
   return (
     <>
-      <nav className="flex justify-between items-center gap-4 bg-orange-50 p-4">
+      <nav className="flex flex-wrap justify-between items-center gap-4 bg-orange-50 p-4">
         <h2 className="text-5xl font-bold text-green-700">
           <Link to="/" className="flex">
             <span className="text-slate-600 mr-2">

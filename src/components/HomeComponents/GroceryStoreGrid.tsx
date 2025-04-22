@@ -48,7 +48,7 @@ function GroceryStoreGrid() {
                   <CarouselItem key={index} className="basis-1/2 sm:basis-1/5">
                     <HoverCard>
                       <HoverCardTrigger asChild>
-                        <Link to={store.link}>
+                        <Link to={store.link ?? "#"}>
                           <Card className="relative w-full transition-all duration-300 hover:shadow-lg ">
                             {mostPopularIndexes.has(index) && (
                               <Badge className="absolute -top-2 right-4 bg-green-700">

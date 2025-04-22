@@ -1,6 +1,18 @@
 import { faker } from "@faker-js/faker";
 import { FaBowlRice, FaCanadianMapleLeaf, FaFish, FaBurger, FaAppleWhole, FaStore, FaBacon, FaCheese } from "react-icons/fa6";
 
+
+interface GroceryStore {
+    id: string;
+    name: string;
+    description: string;
+    icon: React.ComponentType;
+    orderBy: string;
+    storeTimes: string;
+    storeFeatures: string;
+    link?: string;
+}
+
 const namePrefixes = [
     "Harvest", "Green", "Urban", "Sunny", "Rustic", "Fresh", "Golden", "Thyme", "Olive", "Wild",
     "Bloom", "Cedar", "Sage", "Happy", "Morning", "Valley", "Maple", "Lush", "Evergreen", "Hilltop"

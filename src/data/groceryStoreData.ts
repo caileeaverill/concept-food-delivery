@@ -11,7 +11,7 @@ export interface GroceryStore {
     orderBy: string;
     storeTimes: string;
     storeFeatures: string;
-    link?: string; // ✅ Add this line
+    link: string;
 }
 
 const namePrefixes = [
@@ -64,6 +64,7 @@ const groceryStoreList = Array.from({ length: 10 }, () => ({
     orderBy: `${faker.number.int({ min: 7, max: 17 })}:${faker.helpers.arrayElement([0, 15, 30, 45]).toString().padStart(2, '0')}`,
     storeTimes: `${faker.helpers.arrayElement(storeTimesOpening)} - ${faker.helpers.arrayElement(storeTimesClosing)}`,
     storeFeatures: faker.helpers.arrayElements(storeFeatures, 2).join(" • "),
+    link: faker.internet.url()
 }));
 
 export default groceryStoreList;
